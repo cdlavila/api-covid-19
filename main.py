@@ -1,8 +1,9 @@
-from api import datos_abiertos as da
-from ui import interface, filter_information as fi
+from api import datos_abiertos
+from ui import interface, filter_information
 
 
-registers_limit, departament_name = interface.menu()
-data = da.colsult(registers_limit, departament_name)
-filtered_data = fi.filter_columns(data)
-print(filtered_data)
+if __name__ == '__main__':
+    registers_limit, departament_name = interface.menu()
+    data = datos_abiertos.get_data(registers_limit, departament_name)
+    filtered_data = filter_information.filter_columns(data)
+    print(filtered_data)
