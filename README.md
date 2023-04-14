@@ -1,4 +1,4 @@
-# API Covid-19 Project
+# API consumption Covid 19
 Project that gets data from Covid-19 cases in Colombia through the API (Sodapi) that Datos Abiertos Colombia provides us.
 
 Requirements
